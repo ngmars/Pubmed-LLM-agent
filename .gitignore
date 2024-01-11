@@ -1,0 +1,10 @@
+# Virtual Environment
+*.pyc
+*.pyo
+__pycache__/
+INLPT_Project_environment_3_11_0/
+
+
+# don't commit csv files 
+extracted_csv_data/
+
