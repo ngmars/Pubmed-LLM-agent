@@ -22,7 +22,7 @@ def read_xlsx_return_df (xlsx_filename):
     reader.fillna('', inplace=True)
 
     reader.columns = ["id", "doi", "authors","title", "abstract"]
-    conv_data = rows_to_dict(reader)[170:180]
+    conv_data = rows_to_dict(reader)
     lines = reader.shape[0]
     return conv_data, lines
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     #client data 
     client = OpenSearch(
-    hosts=["https://admin:2NCbjLJWWzIFw@ec2-34-207-194-37.compute-1.amazonaws.com:9200/"],
+    hosts=["https://admin:2NCbjLJWWzIFw@localhost:9200/"],
         http_compress=True,
         use_ssl=True,
         verify_certs=False,
@@ -110,7 +110,6 @@ if __name__ == "__main__":
     conv_data, lines = read_xlsx_return_df(filePath)
 
     def chunk_upload_data(paper): 
-        print("THREAD ID: ", threading.get_ident())
         authors = str(paper['authors']).replace("[","").replace("]","").replace("'","")
 
         information = INFORMATION_TEMPLATE.format(
@@ -145,9 +144,8 @@ if __name__ == "__main__":
 
             try:
                 # Index the document
-                #res = client.index(index=INDEX_NAME, body=doc)
-                #logfile.write(str(res))
-                print("DOC ID: ", doc["id"])
+                res = client.index(index=INDEX_NAME, body=doc)
+                logfile.write(str(res))
 
             except Exception as e:
                 print(f"Missed {paper['id']}")
