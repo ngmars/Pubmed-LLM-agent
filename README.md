@@ -10,7 +10,6 @@ Authors of Repo:
 
   
 
-```sh
 
 └──  /
 
@@ -48,7 +47,7 @@ Authors of Repo:
 
   
 
-<details  closed><summary>.</summary>
+<summary>.</summary>
 
   
 
@@ -56,7 +55,7 @@ Authors of Repo:
 
 | [requirements.txt](requirements.txt) | <code>► File to set up the virtual environment</code> |
 
-<details  closed><summary>docker-compose-openSearch</summary>
+<summary>docker-compose-openSearch</summary>
 
 | [docker-compose.yml](docker-compose-openSearch/docker-compose.yml) | <code>► docker compose file to start the opensearch docker container</code> |
 
