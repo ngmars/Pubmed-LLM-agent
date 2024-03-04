@@ -47,15 +47,10 @@ Authors of Repo:
 
   
 
-<summary>.</summary>
-
-  
 
 | File | Summary |
 
 | [requirements.txt](requirements.txt) | <code>► File to set up the virtual environment</code> |
-
-<summary>docker-compose-openSearch</summary>
 
 | [docker-compose.yml](docker-compose-openSearch/docker-compose.yml) | <code>► docker compose file to start the opensearch docker container</code> |
 
@@ -90,7 +85,7 @@ Authors of Repo:
   
 
 1. Clone the repository:
-> ```console
+> ```
 
 > $ git clone https://github.com/ngmars/Group35-INLPT-WS2023.git
 
@@ -99,7 +94,7 @@ Authors of Repo:
 >
  2. Change to the project directory:
 
-> ```console
+> ```
 
 > $ cd Group35-INLPT-WS2023
 
@@ -109,7 +104,7 @@ Authors of Repo:
 
 3. Install the dependencies:
 
-> ```console
+> ```
 
 > $ pip install -r requirements.txt
 
@@ -117,7 +112,7 @@ Authors of Repo:
 
 3. Extract data from PUBMED - install Esearch CLI and run in the terminal: 
 
-> ```console
+> ```
 
 > esearch -db pubmed -query "("intelligence"[Title/Abstract]) AND ((fha[Filter]) AND (2014:2024[pdat]))" | efetch -format xml > pubmed_results.xml
 
@@ -125,34 +120,34 @@ Authors of Repo:
   
 4. Save extracted data in CSV file: 
 
-> ```console
+> ```
 
 > Run all cells in Data_Extractor.ipynb - This saves responses in extracted_outputs.csv
 
 > ```
 5. Create index in Vector DB: 
 
-> ```console
+> ```
 
 > Run all cells in createIndex.ipynb - This saves responses in extracted_outputs.csv
 
 > ```
  6. Upload data to Vector DB: 
 
-> ```console
+> ```
 
 > python uploadDataToDb.py
 
 > ```
 7. Start Chatbot UI
 
-> ```console
+> ```
 
 > Run all cells in Gemini_LLM_connector.ipynb - The last cell starts the chatbot
 
 > ```
 8. Run LLM evaluation
-> ```console
+> ```
 
 > Run all cells in modelEvaluation.ipynb - The evaluates the LLM
 
