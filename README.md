@@ -16,8 +16,9 @@ Authors of Repo:
 - Gemini LLM setup
 - Gradio UI setup
 - Question-Answer Generation
-- Evalutation
+- Evaluation
 - Stress testing
+- Documentation
 
 #### Turdimuratov Dilmukhammed
 - Data extraction
@@ -174,6 +175,6 @@ Authors of Repo:
 8. Run LLM evaluation
  ```
 
- Run all cells in modelEvaluation.ipynb - The evaluates the LLM
+ Run all cells in model evaluation.ipynb - The evaluates the LLM
 
  ```
