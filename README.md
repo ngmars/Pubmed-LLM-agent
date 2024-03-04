@@ -85,70 +85,68 @@ Authors of Repo:
   
 
 1. Clone the repository:
-> ```
+ ```
+ $ git clone https://github.com/ngmars/Group35-INLPT-WS2023.git
 
-> $ git clone https://github.com/ngmars/Group35-INLPT-WS2023.git
+ ```
 
-> ```
 
->
  2. Change to the project directory:
 
-> ```
+ ```
 
-> $ cd Group35-INLPT-WS2023
+ $ cd Group35-INLPT-WS2023
 
-> ```
+ ```
 
->
+
 
 3. Install the dependencies:
 
-> ```
+ ```
 
-> $ pip install -r requirements.txt
+ $ pip install -r requirements.txt
 
-> ```
+ ```
 
 3. Extract data from PUBMED - install Esearch CLI and run in the terminal: 
 
-> ```
+ ```
 
-> esearch -db pubmed -query "("intelligence"[Title/Abstract]) AND ((fha[Filter]) AND (2014:2024[pdat]))" | efetch -format xml > pubmed_results.xml
+ esearch -db pubmed -query "("intelligence"[Title/Abstract]) AND ((fha[Filter]) AND (2014:2024[pdat]))" | efetch -format xml > pubmed_results.xml
 
-> ```
+ ```
   
 4. Save extracted data in CSV file: 
 
-> ```
+ ```
+ Run all cells in Data_Extractor.ipynb - This saves responses in extracted_outputs.csv
 
-> Run all cells in Data_Extractor.ipynb - This saves responses in extracted_outputs.csv
-
-> ```
+ ```
 5. Create index in Vector DB: 
 
-> ```
+ ```
 
-> Run all cells in createIndex.ipynb - This saves responses in extracted_outputs.csv
+ Run all cells in createIndex.ipynb - This saves responses in extracted_outputs.csv
 
-> ```
+ ```
  6. Upload data to Vector DB: 
 
-> ```
+ ```
 
-> python uploadDataToDb.py
+ python uploadDataToDb.py
 
-> ```
+ ```
 7. Start Chatbot UI
 
-> ```
+ ```
 
-> Run all cells in Gemini_LLM_connector.ipynb - The last cell starts the chatbot
+ Run all cells in Gemini_LLM_connector.ipynb - The last cell starts the chatbot
 
-> ```
+ ```
 8. Run LLM evaluation
-> ```
+ ```
 
-> Run all cells in modelEvaluation.ipynb - The evaluates the LLM
+ Run all cells in modelEvaluation.ipynb - The evaluates the LLM
 
-> ```
+ ```
