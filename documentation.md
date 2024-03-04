@@ -32,7 +32,9 @@ Authors of Repo:
 ## Overview
 This project showcases the development and implementation of a sophisticated text retrieval system utilizing the power of Google Cloud's Vertex AI and the OpenSearch engine. The primary focus of the project is to efficiently extract and query abstracts containing the word "intelligence" from the vast PUBMED database, a critical resource in the biomedical and life sciences domain.
 
-
+![UI 1](./assets/UI_1.jpeg "UI 1")
+![UI 2](./assets/UI_2.jpeg "UI 2")
+![UI 3](./assets/UI_3.jpeg "UI 3")
 ## Objective
 The goal of this project is to create a scalable and effective solution for researchers and professionals seeking specific insights related to "intelligence" within the biomedical field. By leveraging the advanced capabilities of Vertex AI for machine learning operations and OpenSearch for search and analytics, the project aims to facilitate a more intuitive and rapid retrieval of relevant information.
 
@@ -115,23 +117,25 @@ The project's performance is evaluated using three key metrics:
 
 #### Bertscore
 
-Bertscore assesses the quality of text similarity between the retrieved documents and the ground truth. This metric leverages BERT embeddings to capture semantic similarity, providing a nuanced evaluation of the relevance of the retrieved abstracts.
+Bertscore assesses the quality of text similarity between the retrieved documents and the ground truth. This metric leverages BERT embeddings to capture semantic similarity, providing a nuanced evaluation of the relevance of the retrieved abstracts. The below chart shows the bert score comparison for different types of chunking.
+![BERT](./assets/BERT.png "BERT")
 
 #### Rouge Score
 
-Rouge (Recall-Oriented Understudy for Gisting Evaluation) Score measures the overlap of n-grams between the retrieved documents and the ground truth. It provides insights into the recall of relevant information within the retrieved abstracts.
+Rouge (Recall-Oriented Understudy for Gisting Evaluation) Score measures the overlap of n-grams between the retrieved documents and the ground truth. It provides insights into the recall of relevant information within the retrieved abstracts. The below chart shows the Rouge score comparison for different types of chunking.
+![ROUGE](./assets/ROUGE.png "ROUGE")
 
 #### Bleu Score
 
-Bleu (Bilingual Evaluation Understudy) Score evaluates the precision of the text retrieval system by comparing the n-grams in the retrieved documents with those in the ground truth. It quantifies how well the system captures the specific details present in the relevant abstracts.
+Bleu (Bilingual Evaluation Understudy) Score evaluates the precision of the text retrieval system by comparing the n-grams in the retrieved documents with those in the ground truth. It quantifies how well the system captures the specific details present in the relevant abstracts.The below chart shows the Bleu score comparison for different types of chunking.
+![BLEU](./assets/BLEU.png "BLEU")
 
 ---
 ## Result
 Based on the obtained data, we can always witness that the data without chunking demonstrates a higher bleu score of 0.05, a higher overall roughe score and a higher bertscore precision, f1 and recall
 
 ## Conclusion
-
-This project has successfully demonstrated a novel approach to intelligence extraction from biomedical literature by integrating advanced technologies such as the Gemini-pro language model, Gradio for an interactive UI, and OpenSearch for efficient text retrieval. The implementation of three distinct indexing strategies within OpenSearch ensures adaptability to diverse user preferences, enriching the search experience in the complex landscape of PUBMED abstracts.
+This project highlights the impact of chunking with the new Gemini-pro model from google while also demonstrating a novel approach to intelligence extraction from biomedical literature by integrating advanced technologies such as the Gemini-pro language model, Gradio for an interactive UI, and OpenSearch for efficient text retrieval. The implementation of three distinct indexing strategies within OpenSearch ensures adaptability to diverse user preferences, enriching the search experience in the complex landscape of PUBMED abstracts.
 
 The multifaceted evaluation using Bertscore, Rouge score, and Bleu score provides a comprehensive understanding of the system's performance, showcasing its ability to generate relevant and accurate responses. Additionally, addressing the challenge of synthesizing evidence across multiple articles through OpenSearch marks a significant advancement compared to previous limitations observed in GPT-3-based approaches.
 

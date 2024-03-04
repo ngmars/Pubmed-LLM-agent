@@ -6,6 +6,15 @@ Authors of Repo:
    
 ## Please send an email to nitish.gopinath@stud.uni-heidelberg.de, to turn on the AWS EC2 instance where the OpenSearch DB is hosted
 
+### Screenshots of UI
+![UI 1](./assets/UI_1.jpeg "UI 1")
+![UI 2](./assets/UI_2.jpeg "UI 2")
+![UI 3](./assets/UI_3.jpeg "UI 3")
+
+### Obtained results 
+![BERT](./assets/BERT.png "BERT")
+![ROUGE](./assets/ROUGE.png "ROUGE")
+![BLEU](./assets/BLEU.png "BLEU")
 ## Repository Structure
 
   
