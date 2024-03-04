@@ -23,7 +23,7 @@ Authors of Repo:
 - Gemini LLM setup
 - Gradio UI setup
 - Question-Answer Generation
-- Evalutation
+- Evaluation
 - Stress testing
 
 #### Turdimuratov Dilmukhammed
