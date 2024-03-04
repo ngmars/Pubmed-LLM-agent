@@ -3,7 +3,25 @@ Authors of Repo:
 2. Dilmukhammed - Turdimuratov Dilmukhammed (Matrikel Nr - 4738284)
 3. Richa Garg 
 4. Palkin Singh
-   
+
+
+#### Advisor:   John Ziegler
+
+## Contributions
+#### Nitish Gopinath 
+- Data extraction
+- Data Cleaning
+- Vector DB Setup
+- Vector DB indexing
+- Gemini LLM setup
+- Gradio UI setup
+- Question-Answer Generation
+- Evalutation
+- Stress testing
+
+#### Turdimuratov Dilmukhammed
+- Data extraction
+
 ## Please send an email to nitish.gopinath@stud.uni-heidelberg.de, to turn on the AWS EC2 instance where the OpenSearch DB is hosted
 
 ### Screenshots of UI
